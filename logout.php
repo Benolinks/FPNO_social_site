@@ -6,9 +6,6 @@ session_unset();
 session_destroy();
 unset($_SESSION['user_id']);
 
-header('location:'. 'signin.php');
+header('location:' . 'signin.php');
 
-
-
-
-?>
+$connection->close();
